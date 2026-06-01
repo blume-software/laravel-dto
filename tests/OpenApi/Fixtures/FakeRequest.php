@@ -1,8 +1,8 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\OpenApi\Fixtures;
+namespace BlumeSoftware\LaravelDTO\Tests\OpenApi\Fixtures;
 
-use Blume\LaravelDTO\RequestDTO;
+use BlumeSoftware\LaravelDTO\RequestDTO;
 
 class FakeRequest extends RequestDTO
 {

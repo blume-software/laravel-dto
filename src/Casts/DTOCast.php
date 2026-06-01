@@ -1,9 +1,9 @@
 <?php
 
-namespace Blume\LaravelDTO\Casts;
+namespace BlumeSoftware\LaravelDTO\Casts;
 
-use Blume\LaravelDTO\BaseDTO;
-use Blume\LaravelDTO\Interfaces\Castable;
+use BlumeSoftware\LaravelDTO\BaseDTO;
+use BlumeSoftware\LaravelDTO\Interfaces\Castable;
 
 class DTOCast implements Castable
 {

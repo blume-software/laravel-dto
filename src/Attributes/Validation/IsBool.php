@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\Attributes\Validation;
+namespace BlumeSoftware\LaravelDTO\Attributes\Validation;
 
 use Attribute;
 

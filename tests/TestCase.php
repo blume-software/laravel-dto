@@ -1,8 +1,8 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests;
+namespace BlumeSoftware\LaravelDTO\Tests;
 
-use Blume\LaravelDTO\LaravelDTOServiceProvider;
+use BlumeSoftware\LaravelDTO\LaravelDTOServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase

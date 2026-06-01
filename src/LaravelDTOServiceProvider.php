@@ -1,8 +1,8 @@
 <?php
 
-namespace Blume\LaravelDTO;
+namespace BlumeSoftware\LaravelDTO;
 
-use Blume\LaravelDTO\OpenApi\Http\Controllers\OpenApiController;
+use BlumeSoftware\LaravelDTO\OpenApi\Http\Controllers\OpenApiController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 

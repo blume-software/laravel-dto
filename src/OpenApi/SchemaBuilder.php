@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\OpenApi;
+namespace BlumeSoftware\LaravelDTO\OpenApi;
 
 use BackedEnum;
 use Carbon\Carbon;
@@ -15,17 +15,17 @@ use ReflectionProperty;
 use ReflectionUnionType;
 use RuntimeException;
 use stdClass;
-use Blume\LaravelDTO\Attributes\Validation\Email;
-use Blume\LaravelDTO\Attributes\Validation\In;
-use Blume\LaravelDTO\Attributes\Validation\Max;
-use Blume\LaravelDTO\Attributes\Validation\Min;
-use Blume\LaravelDTO\Attributes\Validation\Required;
-use Blume\LaravelDTO\Attributes\Validation\URule;
-use Blume\LaravelDTO\Attributes\Validation\Uuid;
-use Blume\LaravelDTO\BaseDTO;
-use Blume\LaravelDTO\RequestDTO;
-use Blume\LaravelDTO\OpenApi\Attributes\Example;
-use Blume\LaravelDTO\Contracts\InfersOpenApiSchema;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Email;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\In;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Max;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Min;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Required;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\URule;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Uuid;
+use BlumeSoftware\LaravelDTO\BaseDTO;
+use BlumeSoftware\LaravelDTO\RequestDTO;
+use BlumeSoftware\LaravelDTO\OpenApi\Attributes\Example;
+use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 
 /**
  * Builds JSON Schema objects from PHP classes and enums via reflection.

@@ -1,10 +1,10 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\OpenApi;
+namespace BlumeSoftware\LaravelDTO\Tests\OpenApi;
 
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-use Blume\LaravelDTO\OpenApi\SchemaBuilder;
+use BlumeSoftware\LaravelDTO\OpenApi\SchemaBuilder;
 
 class SchemaBuilderTest extends TestCase
 {

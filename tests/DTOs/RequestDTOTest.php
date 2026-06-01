@@ -1,19 +1,19 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\DTOs;
+namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
 use Illuminate\Validation\ValidationException;
-use Blume\LaravelDTO\Attributes\Cast;
-use Blume\LaravelDTO\Attributes\DefaultValue;
-use Blume\LaravelDTO\Attributes\Validation\IsInt;
-use Blume\LaravelDTO\Attributes\Validation\IsString;
-use Blume\LaravelDTO\Attributes\Validation\Max;
-use Blume\LaravelDTO\Attributes\Validation\Min;
-use Blume\LaravelDTO\Attributes\Validation\Nullable;
-use Blume\LaravelDTO\Attributes\Validation\Required;
-use Blume\LaravelDTO\Casts\EnumCast;
-use Blume\LaravelDTO\RequestDTO;
-use Blume\LaravelDTO\Tests\TestCase;
+use BlumeSoftware\LaravelDTO\Attributes\Cast;
+use BlumeSoftware\LaravelDTO\Attributes\DefaultValue;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\IsInt;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\IsString;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Max;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Min;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Nullable;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Required;
+use BlumeSoftware\LaravelDTO\Casts\EnumCast;
+use BlumeSoftware\LaravelDTO\RequestDTO;
+use BlumeSoftware\LaravelDTO\Tests\TestCase;
 
 enum RequestTestColor: string
 {

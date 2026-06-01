@@ -1,12 +1,12 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\OpenApi;
+namespace BlumeSoftware\LaravelDTO\Tests\OpenApi;
 
 use Illuminate\Routing\Route;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-use Blume\LaravelDTO\OpenApi\RequestBodyBuilder;
-use Blume\LaravelDTO\OpenApi\SchemaBuilder;
+use BlumeSoftware\LaravelDTO\OpenApi\RequestBodyBuilder;
+use BlumeSoftware\LaravelDTO\OpenApi\SchemaBuilder;
 
 class RequestBodyBuilderTest extends TestCase
 {

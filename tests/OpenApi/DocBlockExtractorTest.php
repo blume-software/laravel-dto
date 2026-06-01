@@ -1,10 +1,10 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\OpenApi;
+namespace BlumeSoftware\LaravelDTO\Tests\OpenApi;
 
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-use Blume\LaravelDTO\OpenApi\DocBlockExtractor;
+use BlumeSoftware\LaravelDTO\OpenApi\DocBlockExtractor;
 
 class DocBlockExtractorTest extends TestCase
 {

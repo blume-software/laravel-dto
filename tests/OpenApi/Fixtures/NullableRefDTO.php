@@ -1,8 +1,8 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\OpenApi\Fixtures;
+namespace BlumeSoftware\LaravelDTO\Tests\OpenApi\Fixtures;
 
-use Blume\LaravelDTO\BaseDTO;
+use BlumeSoftware\LaravelDTO\BaseDTO;
 
 class NullableRefDTO extends BaseDTO
 {

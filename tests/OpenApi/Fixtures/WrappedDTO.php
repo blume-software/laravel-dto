@@ -1,9 +1,9 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\OpenApi\Fixtures;
+namespace BlumeSoftware\LaravelDTO\Tests\OpenApi\Fixtures;
 
-use Blume\LaravelDTO\BaseDTO;
-use Blume\LaravelDTO\Contracts\InfersOpenApiSchema;
+use BlumeSoftware\LaravelDTO\BaseDTO;
+use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 
 class WrappedDTO extends BaseDTO implements InfersOpenApiSchema
 {

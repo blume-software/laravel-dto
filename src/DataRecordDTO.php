@@ -1,8 +1,8 @@
 <?php
 
-namespace Blume\LaravelDTO;
+namespace BlumeSoftware\LaravelDTO;
 
-use Blume\LaravelDTO\Concerns\FillsFromArray;
+use BlumeSoftware\LaravelDTO\Concerns\FillsFromArray;
 
 /**
  * DTO filled from associative array payloads (e.g. JSON objects). Declares public typed properties;

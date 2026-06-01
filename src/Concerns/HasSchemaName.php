@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\Concerns;
+namespace BlumeSoftware\LaravelDTO\Concerns;
 
 trait HasSchemaName
 {

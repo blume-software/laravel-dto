@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\Interfaces;
+namespace BlumeSoftware\LaravelDTO\Interfaces;
 
 interface Castable
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Blume\LaravelDTO\OpenApi\Traits;
+namespace BlumeSoftware\LaravelDTO\OpenApi\Traits;
 
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
 use ReflectionUnionType;
-use Blume\LaravelDTO\OpenApi\SchemaBuilder;
+use BlumeSoftware\LaravelDTO\OpenApi\SchemaBuilder;
 
 /**
  * @deprecated Inject SchemaBuilder directly. This trait is kept for backward compatibility.

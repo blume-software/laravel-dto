@@ -1,9 +1,9 @@
 <?php
 
-namespace Blume\LaravelDTO\Casts;
+namespace BlumeSoftware\LaravelDTO\Casts;
 
 use InvalidArgumentException;
-use Blume\LaravelDTO\Interfaces\Castable;
+use BlumeSoftware\LaravelDTO\Interfaces\Castable;
 
 class IntCast implements Castable
 {

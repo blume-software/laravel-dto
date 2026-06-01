@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO;
+namespace BlumeSoftware\LaravelDTO;
 
 use Carbon\Carbon;
 use JsonException;

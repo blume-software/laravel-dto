@@ -1,10 +1,10 @@
 <?php
 
-namespace Blume\LaravelDTO\DTOs;
+namespace BlumeSoftware\LaravelDTO\DTOs;
 
-use Blume\LaravelDTO\Attributes\Validation\IsInt;
-use Blume\LaravelDTO\Attributes\Validation\Required;
-use Blume\LaravelDTO\RequestDTO;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\IsInt;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Required;
+use BlumeSoftware\LaravelDTO\RequestDTO;
 
 class ModelOnlyIdDTO extends RequestDTO
 {

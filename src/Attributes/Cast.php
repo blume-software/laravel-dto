@@ -1,10 +1,10 @@
 <?php
 
-namespace Blume\LaravelDTO\Attributes;
+namespace BlumeSoftware\LaravelDTO\Attributes;
 
 use Attribute;
 use InvalidArgumentException;
-use Blume\LaravelDTO\Interfaces\Castable;
+use BlumeSoftware\LaravelDTO\Interfaces\Castable;
 
 #[Attribute(Attribute::TARGET_PROPERTY | Attribute::IS_REPEATABLE)]
 class Cast implements Castable

@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO;
+namespace BlumeSoftware\LaravelDTO;
 
 class PaginationMetaDTO extends BaseDTO
 {

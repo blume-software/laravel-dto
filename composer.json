@@ -1,5 +1,5 @@
 {
-    "name": "blume/laravel-dto",
+    "name": "blume-software/laravel-dto",
     "description": "Laravel DTO library with validation attributes, casts, response helpers, and OpenAPI generation",
     "type": "library",
     "license": "MIT",
@@ -17,20 +17,23 @@
         "orchestra/testbench": "^11.0",
         "phpunit/phpunit": "^12.5"
     },
+    "scripts": {
+      "test": "vendor/bin/phpunit"
+    },
     "autoload": {
         "psr-4": {
-            "Blume\\LaravelDTO\\": "src/"
+            "BlumeSoftware\\LaravelDTO\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Blume\\LaravelDTO\\Tests\\": "tests/"
+            "BlumeSoftware\\LaravelDTO\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Blume\\LaravelDTO\\LaravelDTOServiceProvider"
+                "BlumeSoftware\\LaravelDTO\\LaravelDTOServiceProvider"
             ]
         }
     },

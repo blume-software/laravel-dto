@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\Contracts;
+namespace BlumeSoftware\LaravelDTO\Contracts;
 
 interface InfersOpenApiSchema
 {

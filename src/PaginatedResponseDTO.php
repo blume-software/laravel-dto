@@ -1,13 +1,13 @@
 <?php
 
-namespace Blume\LaravelDTO;
+namespace BlumeSoftware\LaravelDTO;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\JsonResponse;
 use ReflectionException;
-use Blume\LaravelDTO\Concerns\HasSchemaName;
-use Blume\LaravelDTO\Contracts\InfersOpenApiSchema;
+use BlumeSoftware\LaravelDTO\Concerns\HasSchemaName;
+use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
 /**

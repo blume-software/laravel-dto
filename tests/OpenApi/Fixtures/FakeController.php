@@ -1,14 +1,14 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\OpenApi\Fixtures;
+namespace BlumeSoftware\LaravelDTO\Tests\OpenApi\Fixtures;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
-use Blume\LaravelDTO\NonPaginatedResponseDTO;
-use Blume\LaravelDTO\PaginatedResponseDTO;
-use Blume\LaravelDTO\OpenApi\Attributes\Operation;
-use Blume\LaravelDTO\OpenApi\Attributes\PathItem;
-use Blume\LaravelDTO\OpenApi\Attributes\Response as ResponseAttribute;
+use BlumeSoftware\LaravelDTO\NonPaginatedResponseDTO;
+use BlumeSoftware\LaravelDTO\PaginatedResponseDTO;
+use BlumeSoftware\LaravelDTO\OpenApi\Attributes\Operation;
+use BlumeSoftware\LaravelDTO\OpenApi\Attributes\PathItem;
+use BlumeSoftware\LaravelDTO\OpenApi\Attributes\Response as ResponseAttribute;
 
 /**
  * Fixture controller for OpenAPI unit tests.

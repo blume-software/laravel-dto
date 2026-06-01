@@ -1,14 +1,14 @@
 <?php
 
-namespace Blume\LaravelDTO\Concerns;
+namespace BlumeSoftware\LaravelDTO\Concerns;
 
 use ReflectionIntersectionType;
 use ReflectionNamedType;
 use ReflectionProperty;
 use ReflectionType;
 use ReflectionUnionType;
-use Blume\LaravelDTO\Attributes\ArrayOf;
-use Blume\LaravelDTO\BaseDTO;
+use BlumeSoftware\LaravelDTO\Attributes\ArrayOf;
+use BlumeSoftware\LaravelDTO\BaseDTO;
 
 trait FillsFromArray
 {

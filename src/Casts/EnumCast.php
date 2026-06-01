@@ -1,10 +1,10 @@
 <?php
 
-namespace Blume\LaravelDTO\Casts;
+namespace BlumeSoftware\LaravelDTO\Casts;
 
 use BackedEnum;
 use InvalidArgumentException;
-use Blume\LaravelDTO\Interfaces\Castable;
+use BlumeSoftware\LaravelDTO\Interfaces\Castable;
 use UnitEnum;
 use ValueError;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\DTOs;
+namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
 use Carbon\Carbon;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 use Stringable;
-use Blume\LaravelDTO\BaseDTO;
+use BlumeSoftware\LaravelDTO\BaseDTO;
 
 class BaseDTOTest extends TestCase
 {

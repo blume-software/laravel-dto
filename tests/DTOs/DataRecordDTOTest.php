@@ -1,10 +1,10 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\DTOs;
+namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
 use PHPUnit\Framework\TestCase;
-use Blume\LaravelDTO\Attributes\ArrayOf;
-use Blume\LaravelDTO\DataRecordDTO;
+use BlumeSoftware\LaravelDTO\Attributes\ArrayOf;
+use BlumeSoftware\LaravelDTO\DataRecordDTO;
 
 class DataRecordDTOTest extends TestCase
 {

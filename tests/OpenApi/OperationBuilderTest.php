@@ -1,17 +1,17 @@
 <?php
 
-namespace Blume\LaravelDTO\Tests\OpenApi;
+namespace BlumeSoftware\LaravelDTO\Tests\OpenApi;
 
 use Illuminate\Routing\Route;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-use Blume\LaravelDTO\OpenApi\Attributes\Operation;
-use Blume\LaravelDTO\OpenApi\Attributes\PathItem;
-use Blume\LaravelDTO\OpenApi\DocBlockExtractor;
-use Blume\LaravelDTO\OpenApi\OperationBuilder;
-use Blume\LaravelDTO\OpenApi\RequestBodyBuilder;
-use Blume\LaravelDTO\OpenApi\ResponseBuilder;
-use Blume\LaravelDTO\OpenApi\SchemaBuilder;
+use BlumeSoftware\LaravelDTO\OpenApi\Attributes\Operation;
+use BlumeSoftware\LaravelDTO\OpenApi\Attributes\PathItem;
+use BlumeSoftware\LaravelDTO\OpenApi\DocBlockExtractor;
+use BlumeSoftware\LaravelDTO\OpenApi\OperationBuilder;
+use BlumeSoftware\LaravelDTO\OpenApi\RequestBodyBuilder;
+use BlumeSoftware\LaravelDTO\OpenApi\ResponseBuilder;
+use BlumeSoftware\LaravelDTO\OpenApi\SchemaBuilder;
 
 class OperationBuilderTest extends TestCase
 {

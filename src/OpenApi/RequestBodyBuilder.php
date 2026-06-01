@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\OpenApi;
+namespace BlumeSoftware\LaravelDTO\OpenApi;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Routing\Route as RouteObject;
@@ -8,8 +8,8 @@ use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use ReflectionProperty;
-use Blume\LaravelDTO\Attributes\Map;
-use Blume\LaravelDTO\RequestDTO;
+use BlumeSoftware\LaravelDTO\Attributes\Map;
+use BlumeSoftware\LaravelDTO\RequestDTO;
 
 /**
  * Builds the OpenAPI parameters and requestBody for a single controller method.

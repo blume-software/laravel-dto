@@ -5,10 +5,10 @@ namespace Tests\Unit\Blume\LaravelDTO\Casts;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
-use Blume\LaravelDTO\Casts\ArrayCast;
-use Blume\LaravelDTO\Casts\DTOCast;
-use Blume\LaravelDTO\Interfaces\Castable;
-use Blume\LaravelDTO\ModelDTO;
+use BlumeSoftware\LaravelDTO\Casts\ArrayCast;
+use BlumeSoftware\LaravelDTO\Casts\DTOCast;
+use BlumeSoftware\LaravelDTO\Interfaces\Castable;
+use BlumeSoftware\LaravelDTO\ModelDTO;
 
 class ArrayCastTest extends TestCase
 {

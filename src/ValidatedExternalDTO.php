@@ -1,10 +1,10 @@
 <?php
 
-namespace Blume\LaravelDTO;
+namespace BlumeSoftware\LaravelDTO;
 
-use Blume\LaravelDTO\Concerns\HasSchemaName;
-use Blume\LaravelDTO\Concerns\ValidatesFromArray;
-use Blume\LaravelDTO\Contracts\InfersOpenApiSchema;
+use BlumeSoftware\LaravelDTO\Concerns\HasSchemaName;
+use BlumeSoftware\LaravelDTO\Concerns\ValidatesFromArray;
+use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 
 /**
  * Base for DTOs built from raw array payloads outside the HTTP request lifecycle

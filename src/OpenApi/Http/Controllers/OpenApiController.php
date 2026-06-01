@@ -1,13 +1,13 @@
 <?php
 
-namespace Blume\LaravelDTO\OpenApi\Http\Controllers;
+namespace BlumeSoftware\LaravelDTO\OpenApi\Http\Controllers;
 
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\View\View;
 use JsonException;
-use Blume\LaravelDTO\OpenApi\Generator;
+use BlumeSoftware\LaravelDTO\OpenApi\Generator;
 
 class OpenApiController extends Controller
 {

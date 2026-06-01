@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\OpenApi;
+namespace BlumeSoftware\LaravelDTO\OpenApi;
 
 use JsonException;
 

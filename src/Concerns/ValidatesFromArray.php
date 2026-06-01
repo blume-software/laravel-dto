@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\Concerns;
+namespace BlumeSoftware\LaravelDTO\Concerns;
 
 use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 use Illuminate\Support\Arr;
@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use ReflectionClass;
 use ReflectionProperty;
-use Blume\LaravelDTO\Attributes\Cast;
-use Blume\LaravelDTO\Attributes\DefaultValue;
-use Blume\LaravelDTO\Attributes\Map;
-use Blume\LaravelDTO\Attributes\Validation\Rule as ValidationRule;
-use Blume\LaravelDTO\BaseDTO;
+use BlumeSoftware\LaravelDTO\Attributes\Cast;
+use BlumeSoftware\LaravelDTO\Attributes\DefaultValue;
+use BlumeSoftware\LaravelDTO\Attributes\Map;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Rule as ValidationRule;
+use BlumeSoftware\LaravelDTO\BaseDTO;
 
 /**
  * Laravel validation + attribute rules/defaults + property casting for any {@see BaseDTO}.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\OpenApi\Traits;
+namespace BlumeSoftware\LaravelDTO\OpenApi\Traits;
 
 trait InteractsWithOpenApi
 {

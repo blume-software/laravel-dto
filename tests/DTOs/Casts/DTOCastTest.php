@@ -3,8 +3,8 @@
 namespace Tests\Unit\Blume\LaravelDTO\Casts;
 
 use PHPUnit\Framework\TestCase;
-use Blume\LaravelDTO\Casts\DTOCast;
-use Blume\LaravelDTO\ModelDTO;
+use BlumeSoftware\LaravelDTO\Casts\DTOCast;
+use BlumeSoftware\LaravelDTO\ModelDTO;
 
 class DTOCastTest extends TestCase
 {

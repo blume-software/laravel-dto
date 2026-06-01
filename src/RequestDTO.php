@@ -1,11 +1,11 @@
 <?php
 
-namespace Blume\LaravelDTO;
+namespace BlumeSoftware\LaravelDTO;
 
 use Illuminate\Http\Request;
-use Blume\LaravelDTO\Concerns\HasSchemaName;
-use Blume\LaravelDTO\Concerns\ValidatesFromArray;
-use Blume\LaravelDTO\Contracts\InfersOpenApiSchema;
+use BlumeSoftware\LaravelDTO\Concerns\HasSchemaName;
+use BlumeSoftware\LaravelDTO\Concerns\ValidatesFromArray;
+use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 
 abstract class RequestDTO extends BaseDTO implements InfersOpenApiSchema
 {

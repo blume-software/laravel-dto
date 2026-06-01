@@ -1,6 +1,6 @@
 <?php
 
-namespace Blume\LaravelDTO\OpenApi\Attributes;
+namespace BlumeSoftware\LaravelDTO\OpenApi\Attributes;
 
 use Attribute;
 

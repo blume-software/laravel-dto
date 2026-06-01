@@ -1,13 +1,13 @@
 <?php
 
-namespace Blume\LaravelDTO\OpenApi;
+namespace BlumeSoftware\LaravelDTO\OpenApi;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use ReflectionClass;
 use ReflectionException;
-use Blume\LaravelDTO\OpenApi\Attributes\Operation;
-use Blume\LaravelDTO\OpenApi\Attributes\PathItem;
+use BlumeSoftware\LaravelDTO\OpenApi\Attributes\Operation;
+use BlumeSoftware\LaravelDTO\OpenApi\Attributes\PathItem;
 
 /**
  * Orchestrates OpenAPI spec generation by scanning Laravel routes and
