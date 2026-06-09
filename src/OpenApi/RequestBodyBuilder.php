@@ -2,14 +2,14 @@
 
 namespace BlumeSoftware\LaravelDTO\OpenApi;
 
+use BlumeSoftware\LaravelDTO\Attributes\Map;
+use BlumeSoftware\LaravelDTO\RequestDTO;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Routing\Route as RouteObject;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use ReflectionProperty;
-use BlumeSoftware\LaravelDTO\Attributes\Map;
-use BlumeSoftware\LaravelDTO\RequestDTO;
 
 /**
  * Builds the OpenAPI parameters and requestBody for a single controller method.

@@ -3,8 +3,8 @@
 namespace BlumeSoftware\LaravelDTO\Casts;
 
 use BackedEnum;
-use InvalidArgumentException;
 use BlumeSoftware\LaravelDTO\Interfaces\Castable;
+use InvalidArgumentException;
 use UnitEnum;
 use ValueError;
 

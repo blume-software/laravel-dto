@@ -2,11 +2,11 @@
 
 namespace BlumeSoftware\LaravelDTO;
 
+use BlumeSoftware\LaravelDTO\Concerns\HasSchemaName;
+use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\JsonResponse;
 use ReflectionException;
-use BlumeSoftware\LaravelDTO\Concerns\HasSchemaName;
-use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
 abstract class ResponseDTO extends BaseDTO implements InfersOpenApiSchema, Responsable

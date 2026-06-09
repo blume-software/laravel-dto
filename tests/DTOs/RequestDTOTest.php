@@ -2,18 +2,21 @@
 
 namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
-use Illuminate\Validation\ValidationException;
 use BlumeSoftware\LaravelDTO\Attributes\Cast;
 use BlumeSoftware\LaravelDTO\Attributes\DefaultValue;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Email;
 use BlumeSoftware\LaravelDTO\Attributes\Validation\IsInt;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\IsList;
 use BlumeSoftware\LaravelDTO\Attributes\Validation\IsString;
 use BlumeSoftware\LaravelDTO\Attributes\Validation\Max;
 use BlumeSoftware\LaravelDTO\Attributes\Validation\Min;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\NestedRule;
 use BlumeSoftware\LaravelDTO\Attributes\Validation\Nullable;
 use BlumeSoftware\LaravelDTO\Attributes\Validation\Required;
 use BlumeSoftware\LaravelDTO\Casts\EnumCast;
 use BlumeSoftware\LaravelDTO\RequestDTO;
 use BlumeSoftware\LaravelDTO\Tests\TestCase;
+use Illuminate\Validation\ValidationException;
 
 enum RequestTestColor: string
 {
@@ -82,6 +85,20 @@ class RequestDTOTest extends TestCase
             #[Required]
             #[IsInt]
             public int $age;
+        };
+    }
+
+    public function test_validation_exception_thrown_for_nester_rules(): void
+    {
+        $this->expectException(ValidationException::class);
+
+        new class(['emails' => ['lorem', 'ipsum']]) extends RequestDTO
+        {
+            #[Required]
+            #[IsList]
+            #[NestedRule('*', new IsString)]
+            #[NestedRule('*', new Email)]
+            public array $emails;
         };
     }
 

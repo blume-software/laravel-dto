@@ -2,11 +2,11 @@
 
 namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
+use BlumeSoftware\LaravelDTO\BaseDTO;
 use Carbon\Carbon;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 use Stringable;
-use BlumeSoftware\LaravelDTO\BaseDTO;
 
 class BaseDTOTest extends TestCase
 {

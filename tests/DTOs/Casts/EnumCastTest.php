@@ -2,9 +2,9 @@
 
 namespace Tests\Unit\Blume\LaravelDTO\Casts;
 
+use BlumeSoftware\LaravelDTO\Casts\EnumCast;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
-use BlumeSoftware\LaravelDTO\Casts\EnumCast;
 use ValueError;
 
 // ---------------------------------------------------------------------------

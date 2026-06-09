@@ -2,10 +2,10 @@
 
 namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
-use Illuminate\Pagination\LengthAwarePaginator;
-use PHPUnit\Framework\TestCase;
 use BlumeSoftware\LaravelDTO\ModelDTO;
 use BlumeSoftware\LaravelDTO\PaginatedResponseDTO;
+use Illuminate\Pagination\LengthAwarePaginator;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 
 class PaginatedResponseDTOTest extends TestCase

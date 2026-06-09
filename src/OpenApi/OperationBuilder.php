@@ -2,10 +2,10 @@
 
 namespace BlumeSoftware\LaravelDTO\OpenApi;
 
-use Illuminate\Routing\Route as RouteObject;
-use ReflectionMethod;
 use BlumeSoftware\LaravelDTO\OpenApi\Attributes\Operation;
 use BlumeSoftware\LaravelDTO\OpenApi\Attributes\PathItem;
+use Illuminate\Routing\Route as RouteObject;
+use ReflectionMethod;
 
 /**
  * Assembles a single OpenAPI operation object from a route, its PHP attributes,

@@ -2,12 +2,12 @@
 
 namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Validation\ValidationException;
 use BlumeSoftware\LaravelDTO\Attributes\Validation\IsString;
 use BlumeSoftware\LaravelDTO\Attributes\Validation\Required;
-use BlumeSoftware\LaravelDTO\ValidatedExternalDTO;
 use BlumeSoftware\LaravelDTO\Tests\TestCase;
+use BlumeSoftware\LaravelDTO\ValidatedExternalDTO;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Validation\ValidationException;
 
 class ValidatedExternalDTOTest extends TestCase
 {

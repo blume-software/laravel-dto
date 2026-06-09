@@ -15,7 +15,8 @@
     },
     "require-dev": {
         "orchestra/testbench": "^11.0",
-        "phpunit/phpunit": "^12.5"
+        "phpunit/phpunit": "^12.5",
+        "laravel/pint": "^1.29"
     },
     "scripts": {
       "test": "vendor/bin/phpunit"

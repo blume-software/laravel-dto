@@ -2,9 +2,9 @@
 
 namespace BlumeSoftware\LaravelDTO\Tests\OpenApi;
 
+use BlumeSoftware\LaravelDTO\OpenApi\SchemaBuilder;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
-use BlumeSoftware\LaravelDTO\OpenApi\SchemaBuilder;
 
 class SchemaBuilderTest extends TestCase
 {

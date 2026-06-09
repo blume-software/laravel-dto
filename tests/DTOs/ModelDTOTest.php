@@ -2,11 +2,11 @@
 
 namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
-use Illuminate\Database\Eloquent\Model;
-use PHPUnit\Framework\TestCase;
 use BlumeSoftware\LaravelDTO\Attributes\Getter;
 use BlumeSoftware\LaravelDTO\Attributes\Map;
 use BlumeSoftware\LaravelDTO\ModelDTO;
+use Illuminate\Database\Eloquent\Model;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 
 class ModelDTOTest extends TestCase

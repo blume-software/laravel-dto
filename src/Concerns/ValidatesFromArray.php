@@ -2,17 +2,18 @@
 
 namespace BlumeSoftware\LaravelDTO\Concerns;
 
+use BlumeSoftware\LaravelDTO\Attributes\Cast;
+use BlumeSoftware\LaravelDTO\Attributes\DefaultValue;
+use BlumeSoftware\LaravelDTO\Attributes\Map;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\NestedRule;
+use BlumeSoftware\LaravelDTO\Attributes\Validation\Rule as ValidationRule;
+use BlumeSoftware\LaravelDTO\BaseDTO;
 use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use ReflectionClass;
 use ReflectionProperty;
-use BlumeSoftware\LaravelDTO\Attributes\Cast;
-use BlumeSoftware\LaravelDTO\Attributes\DefaultValue;
-use BlumeSoftware\LaravelDTO\Attributes\Map;
-use BlumeSoftware\LaravelDTO\Attributes\Validation\Rule as ValidationRule;
-use BlumeSoftware\LaravelDTO\BaseDTO;
 
 /**
  * Laravel validation + attribute rules/defaults + property casting for any {@see BaseDTO}.
@@ -155,6 +156,7 @@ trait ValidatesFromArray
         foreach ($reflection->getProperties(ReflectionProperty::IS_PUBLIC) as $property) {
             $key = $property->getName();
             $propertyRules = [];
+            $nestedRules = [];
 
             foreach ($property->getAttributes() as $attribute) {
                 $instance = $attribute->newInstance();
@@ -163,11 +165,19 @@ trait ValidatesFromArray
                     $key = $instance->key;
                 } elseif ($instance instanceof ValidationRule) {
                     $propertyRules[] = $instance->toValidationRule();
+                } elseif ($instance instanceof NestedRule) {
+                    $nestedRules[$instance->getPrefix()][] = $instance->toValidationRule();
                 }
             }
 
-            if ($propertyRules !== []) {
+            if (! empty($propertyRules)) {
                 $rules[$key] = $propertyRules;
+            }
+
+            if (! empty($nestedRules)) {
+                foreach ($nestedRules as $prefix => $prefixedNestedRule) {
+                    $rules[$key.'.'.$prefix] = $prefixedNestedRule;
+                }
             }
         }
 

@@ -2,13 +2,13 @@
 
 namespace Tests\Unit\Blume\LaravelDTO\Casts;
 
-use Illuminate\Support\Collection;
-use InvalidArgumentException;
-use PHPUnit\Framework\TestCase;
 use BlumeSoftware\LaravelDTO\Casts\ArrayCast;
 use BlumeSoftware\LaravelDTO\Casts\DTOCast;
 use BlumeSoftware\LaravelDTO\Interfaces\Castable;
 use BlumeSoftware\LaravelDTO\ModelDTO;
+use Illuminate\Support\Collection;
+use InvalidArgumentException;
+use PHPUnit\Framework\TestCase;
 
 class ArrayCastTest extends TestCase
 {

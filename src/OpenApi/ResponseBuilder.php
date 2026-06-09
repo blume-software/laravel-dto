@@ -2,14 +2,14 @@
 
 namespace BlumeSoftware\LaravelDTO\OpenApi;
 
+use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
+use BlumeSoftware\LaravelDTO\ModelDTO;
+use BlumeSoftware\LaravelDTO\NonPaginatedResponseDTO;
+use BlumeSoftware\LaravelDTO\OpenApi\Attributes\Response as ResponseAttribute;
+use BlumeSoftware\LaravelDTO\PaginatedResponseDTO;
 use ReflectionMethod;
 use ReflectionNamedType;
 use RuntimeException;
-use BlumeSoftware\LaravelDTO\ModelDTO;
-use BlumeSoftware\LaravelDTO\NonPaginatedResponseDTO;
-use BlumeSoftware\LaravelDTO\PaginatedResponseDTO;
-use BlumeSoftware\LaravelDTO\OpenApi\Attributes\Response as ResponseAttribute;
-use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 
 /**

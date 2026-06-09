@@ -2,11 +2,11 @@
 
 namespace BlumeSoftware\LaravelDTO\Tests\OpenApi;
 
+use BlumeSoftware\LaravelDTO\OpenApi\ResponseBuilder;
+use BlumeSoftware\LaravelDTO\OpenApi\SchemaBuilder;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 use RuntimeException;
-use BlumeSoftware\LaravelDTO\OpenApi\ResponseBuilder;
-use BlumeSoftware\LaravelDTO\OpenApi\SchemaBuilder;
 
 class ResponseBuilderTest extends TestCase
 {

@@ -2,17 +2,17 @@
 
 namespace BlumeSoftware\LaravelDTO;
 
+use BlumeSoftware\LaravelDTO\Attributes\Cast;
+use BlumeSoftware\LaravelDTO\Attributes\Getter;
+use BlumeSoftware\LaravelDTO\Attributes\Map;
+use BlumeSoftware\LaravelDTO\Concerns\HasSchemaName;
+use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use ReflectionProperty;
-use BlumeSoftware\LaravelDTO\Attributes\Cast;
-use BlumeSoftware\LaravelDTO\Attributes\Getter;
-use BlumeSoftware\LaravelDTO\Attributes\Map;
-use BlumeSoftware\LaravelDTO\Concerns\HasSchemaName;
-use BlumeSoftware\LaravelDTO\Contracts\InfersOpenApiSchema;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
 class ModelDTO extends BaseDTO implements InfersOpenApiSchema, Responsable

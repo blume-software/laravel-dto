@@ -2,9 +2,9 @@
 
 namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
+use BlumeSoftware\LaravelDTO\ResponseDTO;
 use Illuminate\Http\JsonResponse;
 use PHPUnit\Framework\TestCase;
-use BlumeSoftware\LaravelDTO\ResponseDTO;
 use Symfony\Component\HttpFoundation\Request;
 
 class ResponseDTOTest extends TestCase

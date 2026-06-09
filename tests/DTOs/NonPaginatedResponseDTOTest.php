@@ -2,9 +2,9 @@
 
 namespace BlumeSoftware\LaravelDTO\Tests\DTOs;
 
-use PHPUnit\Framework\TestCase;
 use BlumeSoftware\LaravelDTO\ModelDTO;
 use BlumeSoftware\LaravelDTO\NonPaginatedResponseDTO;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 
 class NonPaginatedResponseDTOTest extends TestCase

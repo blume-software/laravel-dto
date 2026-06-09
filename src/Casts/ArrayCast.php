@@ -2,9 +2,9 @@
 
 namespace BlumeSoftware\LaravelDTO\Casts;
 
+use BlumeSoftware\LaravelDTO\Interfaces\Castable;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
-use BlumeSoftware\LaravelDTO\Interfaces\Castable;
 
 class ArrayCast implements Castable
 {
