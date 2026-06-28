@@ -19,8 +19,7 @@ abstract class RequestDTO extends BaseDTO implements InfersOpenApiSchema
             $request = app(Request::class);
 
             $data = array_merge(
-                $request->query->all(),
-                $request->request->all(),
+                $request->all(),
                 $request->route()?->parameters() ?? []
             );
         }
