@@ -7,11 +7,15 @@ use InvalidArgumentException;
 
 class IntCast implements Castable
 {
-    public function cast(string $property, mixed $value): int
+    public function cast(string $property, mixed $value): ?int
     {
-        if (! is_numeric($value) && $value !== '') {
+        if ($value === null || $value === '') {
+            return null;
+        }
+
+        if (! is_numeric($value)) {
             throw new InvalidArgumentException(
-                "IntCast: [$property] is not a valid enum class."
+                "IntCast: [$property] is not a valid integer."
             );
         }
 
