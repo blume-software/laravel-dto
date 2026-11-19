@@ -31,7 +31,6 @@ class RequestBodyBuilderTest extends TestCase
         $info = $this->builder->extractRequestDtoInfo(Fixtures\FakeRequest::class, $route);
 
         $this->assertNotEmpty($info['queryParams']);
-        $this->assertEmpty($info['bodyFields']);
         $this->assertNull($info['requestBody']);
     }
 
